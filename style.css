@@ -1,0 +1,434 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+p {
+  line-height: 20px;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  border: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.box1 {
+  border-radius: 40px;
+  background-image: url("assets/home_escuela_azul.png");
+  background-repeat: round;
+  height: 400px;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.imgequipo {
+  width: 100%;
+}
+
+.imgfondo {
+  z-index: -1;
+  margin-top: -420px;
+  position: absolute;
+  width: 100%;
+}
+
+.box2 {
+  border-radius: 40px;
+  background-color: #00aeef;
+  height: 400px;
+  padding-top: 80px;
+  padding-right: 60px;
+  margin-top: 80px;
+  position: absolute;
+  top: 20px;
+  margin-left: 0px;
+  width: 38%;
+}
+
+.titHome {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 42px;
+  text-transform: uppercase;
+  color: white;
+  text-align: right;
+  font-weight: 800;
+}
+
+.titBox {
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #00aeef;
+  text-align: right;
+  margin-right: 20px;
+  font-weight: 800;
+}
+
+.titBox2 {
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 42px;
+  text-transform: uppercase;
+  color: white;
+  text-align: right;
+  font-weight: 300;
+}
+
+.sectionLinks {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #00aeef;
+  height: 600px;
+  display: block;
+  margin: 0 auto;
+  margin-top: -20px;
+}
+
+.containers {
+  cursor: pointer;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  background: rgb(90, 90, 90);
+  opacity: 0;
+  transition: all 0.5s;
+  border: 0px !important;
+  border-radius: 20px;
+}
+
+.items {
+  padding-left: 20px;
+  letter-spacing: 3px;
+}
+
+.containers:hover .overlay {
+  opacity: 1;
+}
+
+.sectionLinksC {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #00aeef;
+  height: 1000px;
+  display: block;
+  margin: 0 auto;
+  margin-top: -20px;
+}
+
+.pBox {
+  font-size: 12px;
+  margin-right: 20px;
+  text-transform: uppercase;
+  margin-top: 64px;
+  font-weight: 300;
+  color: black !important;
+  text-align: right;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.parrHome {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 300;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.parrH {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  color: white;
+  line-height: 28px;
+  font-weight: 300;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.parrDos {
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  color: #00aeef;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  line-height: 32px;
+  font-weight: 300;
+  position: absolute;
+  right: 180px;
+}
+
+.parrHbold {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  color: white;
+  font-weight: 500;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.sectionFlex {
+  margin-top: 300px;
+  justify-content: center;
+  display: flex;
+}
+
+.sectionFlexs {
+  display: flex;
+  justify-content: center;
+}
+
+.boxLink {
+  padding-top: 0px;
+  cursor: pointer;
+  border: 1px solid lightgrey;
+  margin-bottom: 100px;
+  -webkit-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.30);
+  -moz-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.30);
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.30);
+  width: 300px;
+  height: 280px;
+  margin-right: 20px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.artic {
+  margin-right: 30px;
+  margin-top: 40px;
+}
+
+.boxLinks {
+  padding-top: 0px;
+  cursor: pointer;
+  border: 1px solid lightgrey;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.30);
+  -moz-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.30);
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.30);
+  width: 300px;
+  height: 280px;
+  margin-right: 20px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.boxLink:hover {
+  margin-top: -10px;
+}
+
+#imgBox5 {
+  background-image: url("assets/entornos_portfolio_05.jpg");
+  background-size: contain;
+}
+
+#imgBox4 {
+  background: url("assets/entornos_portfolio_04.jpg");
+  background-size: contain;
+}
+
+#imgBox3 {
+  background: url("assets/entornos_portfolio_03.jpg");
+  background-size: contain;
+}
+
+#imgBox2 {
+  background: url("assets/entornos_portfolio_02.jpg");
+  background-size: contain;
+}
+
+#imgBox1 {
+  background: url("assets/entornos_portfolio_01.jpg");
+  background-size: contain;
+}
+
+#imgBoxCom5 {
+  background-image: url("assets/portfolio-05.jpg");
+  background-size: contain;
+}
+
+#imgBoxCom4 {
+  background: url("assets/portfolio-04.jpg");
+  background-size: contain;
+}
+
+#imgBoxCom3 {
+  background: url("assets/portfolio-03.jpg");
+  background-size: contain;
+}
+
+#imgBoxCom2 {
+  background: url("assets/portfolio-02.jpg");
+  background-size: contain;
+}
+
+#imgBoxCom1 {
+  background: url("assets/portfolio-01.jpg");
+  background-size: contain;
+}
+
+.artic2 {
+  margin-right: 30px;
+  margin-top: 40px;
+  margin-left: -74px;
+}
+
+.titleTextBox {
+  margin-top: 80px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white;
+  line-height: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 800;
+}
+
+.ptextBox {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  margin-top: -40px;
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 400;
+}
+
+.boxLinks:hover {
+  background-color: lightgrey !important;
+  background-image: url("assets/entornos_portfolio_01.jpg");
+  margin-top: -20px;
+}
+
+/* Outer */
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 4em 0;
+}
+
+.popup {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+/* Inner */
+.popup-inner {
+  width: 100%;
+  height: inherit;
+  padding: 20px;
+  overflow-y: scroll;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
+  border-radius: 3px;
+  background: #0000000a;
+}
+
+/* Close Button */
+.popup-close {
+  width: 30px;
+  height: 30px;
+  padding-top: 4px;
+  position: fixed !important;
+  top: 2em;
+  right: 2em;
+  font-family: Arial, Sans-Serif;
+  background: rgba(0, 0, 0, 1);
+  font-size: 20px;
+  text-align: center;
+  line-height: 100%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.imgBack {
+  top: 40px;
+  cursor: pointer;
+  left: 24px;
+  width: 42px;
+  position: absolute;
+}
+
+.imgPop {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.popup-close:hover {
+  background: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+.popup-header {
+  text-align: left;
+  padding: 0 2em 1em;
+}
