@@ -319,7 +319,39 @@ svg {
   display: flex;
   justify-content: center;
 }
+.foot {
+  padding-top: 0px;
+  padding-bottom: 10px;
+  background-color: #00aeef;
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 120px;
+  margin-top: -60px;
+}
+.foot2 {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  background-color: #00aeef;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 120px;
+  margin-top: -20px;
+}
+.titFooter {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+  margin-right: 20px;
+  font-weight: 800;
+}
 
+.titFooter:hover {
+  color: #016e73;
+}
 .boxLink {
   padding-top: 0px;
   cursor: pointer;
