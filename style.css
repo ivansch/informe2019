@@ -32,7 +32,7 @@ body {
 p {
   line-height: 20px;
   font-size: 12px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Encode Sans', sans-serif;
 }
 
 ol, ul {
@@ -56,6 +56,10 @@ table {
 
 img {
   border: none;
+}
+
+button {
+  outline: none;
 }
 
 a {
@@ -94,6 +98,7 @@ a {
 }
 
 .imgequipo {
+  margin-top: 20px;
   width: 100%;
 }
 
@@ -106,7 +111,7 @@ a {
 
 .box2 {
   border-radius: 40px;
-  background-color: #00aeef;
+  background-color: #00b1c7;
   height: 400px;
   padding-top: 80px;
   padding-right: 60px;
@@ -118,7 +123,7 @@ a {
 }
 
 .pathF {
-  fill: #00aeef;
+  fill: #00b1c7;
 }
 
 #cercle1 {
@@ -129,7 +134,7 @@ a {
   margin-left: 220px;
   margin-top: 36px;
   padding: 10px;
-  border: 4px solid #00aeef;
+  border: 4px solid #00b1c7;
 }
 
 #cercle2 {
@@ -140,7 +145,7 @@ a {
   margin-left: 220px;
   margin-top: 60px;
   padding: 10px;
-  border: 4px solid #00aeef;
+  border: 4px solid #00b1c7;
 }
 
 #cercle3 {
@@ -151,7 +156,7 @@ a {
   margin-left: 220px;
   margin-top: 60px;
   padding: 10px;
-  border: 4px solid #00aeef;
+  border: 4px solid #00b1c7;
 }
 
 #cercle1:hover, #cercle2:hover, #cercle3:hover {
@@ -161,29 +166,42 @@ a {
   height: 26px;
   display: block;
   margin-left: 220px;
-  background-color: #00aeef;
+  background-color: #00b1c7;
   border: 0px solid;
 }
 
-svg {
-  height: 26px !important;
-  width: 26px !important;
+.divFlex {
+  display: flex;
+}
+
+.svg2 {
+  height: 26px;
+  width: 26px;
 }
 
 #pathF1 {
-  fill: #00aeef;
+  fill: #00b1c7;
 }
 
 #pathF2 {
-  fill: #00aeef;
+  fill: #00b1c7;
 }
 
 #pathF3 {
-  fill: #00aeef;
+  fill: #00b1c7;
+}
+
+#pathF4 {
+  fill: white;
+}
+
+.svg1 {
+  height: 20px !important;
+  width: 26px !important;
 }
 
 .titHome {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Encode Sans', sans-serif;
   font-size: 42px;
   text-transform: uppercase;
   color: white;
@@ -191,12 +209,55 @@ svg {
   font-weight: 800;
 }
 
+.buttonF {
+  border-radius: 24px;
+  margin-right: 20px;
+  border: 2px solid white;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.btnRedes {
+  width: 124px;
+  border: none;
+  margin-right: 12px;
+  cursor: pointer;
+  background-color: inherit;
+  text-decoration: none;
+  outline: inherit;
+  border-radius: 24px;
+  height: 110px;
+}
+
+.divBtnRedes {
+  top: 1164px;
+  margin-left: 29%;
+  position: absolute;
+  background-color: inherit;
+}
+
+.buttonF:hover {
+  border: 2px solid #035b75;
+}
+
+.titFooter {
+  font-family: 'Encode Sans', sans-serif;
+  font-size: 24px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+  margin-right: 20px;
+  font-weight: 800;
+}
+
 .titBox {
   margin-top: 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Encode Sans', sans-serif;
   font-size: 30px;
   text-transform: uppercase;
-  color: #00aeef;
+  color: #00b1c7;
   text-align: right;
   margin-right: 20px;
   font-weight: 800;
@@ -204,7 +265,7 @@ svg {
 
 .titBox2 {
   margin-top: 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Encode Sans', sans-serif;
   font-size: 42px;
   text-transform: uppercase;
   color: white;
@@ -215,7 +276,7 @@ svg {
 .sectionLinks {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #00aeef;
+  background-color: #00b1c7;
   height: 600px;
   display: block;
   margin: 0 auto;
@@ -242,6 +303,15 @@ svg {
   letter-spacing: 3px;
 }
 
+.btnDescarga {
+  height: 30px;
+  z-index: 6;
+  border: none;
+  background-color: #00b1c7;
+  width: 120px;
+  border-radius: 4px;
+}
+
 .containers:hover .overlay {
   opacity: 1;
 }
@@ -249,10 +319,32 @@ svg {
 .sectionLinksC {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #00aeef;
+  background-color: #00b1c7;
   height: 1000px;
   display: block;
   margin: 0 auto;
+  margin-top: -20px;
+}
+
+.foot {
+  padding-top: 0px;
+  padding-bottom: 10px;
+  background-color: #00b1c7;
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 120px;
+  margin-top: -60px;
+}
+
+.foot2 {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  background-color: #00b1c7;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 120px;
   margin-top: -20px;
 }
 
@@ -265,11 +357,11 @@ svg {
   color: black !important;
   text-align: right;
   margin-bottom: 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Encode Sans', sans-serif;
 }
 
 .parrHome {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Encode Sans', sans-serif;
   font-size: 20px;
   text-transform: uppercase;
   color: white;
@@ -291,7 +383,7 @@ svg {
 .parrDos {
   font-family: 'Roboto', sans-serif;
   font-size: 28px;
-  color: #00aeef;
+  color: #00b1c7;
   margin-top: 80px;
   margin-bottom: 80px;
   line-height: 32px;
@@ -299,7 +391,21 @@ svg {
   position: absolute;
   right: 180px;
 }
-
+.parrDesc {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #00b1c7;
+  line-height: 32px;
+  margin-top: 220px;
+  position: absolute;
+  right: 31.5%;
+}
+.parrDesc:hover{
+  cursor: pointer;
+  color: #0094a7;
+}
 .parrHbold {
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
@@ -319,39 +425,7 @@ svg {
   display: flex;
   justify-content: center;
 }
-.foot {
-  padding-top: 0px;
-  padding-bottom: 10px;
-  background-color: #00aeef;
-  height: 60px;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 120px;
-  margin-top: -60px;
-}
-.foot2 {
-  padding-top: 40px;
-  padding-bottom: 10px;
-  background-color: #00aeef;
-  height: 100px;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 120px;
-  margin-top: -20px;
-}
-.titFooter {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 32px;
-  cursor: pointer;
-  text-transform: uppercase;
-  color: white;
-  margin-right: 20px;
-  font-weight: 800;
-}
 
-.titFooter:hover {
-  color: #016e73;
-}
 .boxLink {
   padding-top: 0px;
   cursor: pointer;
@@ -430,9 +504,7 @@ svg {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-
-}
+.prev:hover, .next:hover {}
 
 /* Caption text */
 .text {
